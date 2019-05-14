@@ -8,6 +8,7 @@ class App < Sinatra::Base
 
   # Add your post route and action belows
   post '/food' do
+    binding.pry
     "My name is #{params[:name]}, and I love #{params[:food]}."
   end
 
